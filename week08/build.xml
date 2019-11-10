@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <!-- エントリポイントとなるクラス名 -->
+  <property name="main-class" value="Main"/>
+  <!-- 作成されるJARファイル名 -->
+  <property name="jar-filename" value="week08"/>
+
+  <property name="encoding" value="UTF-8"/>
+  <property name="build" location="build"/>
+  <property name="dist" location="dist"/>
+  <property name="src" location="src"/>
+  <property name="jdk-version" value="8"/>
+  <property name="resources" location="resources"/>
+
+  <target name="init">
+    <mkdir dir="${build}"/>
+    <mkdir dir="${dist}"/>
+  </target>
+
+  <target name="compile" depends="init">
+    <javac srcdir="${src}" destdir="${build}" encoding="${encoding}"
+           release="${jdk-version}" debug="on"
+           includeAntRuntime="false"/>
+  </target>
+
+  <target name="run" depends="compile">
+    <java classname="${main-class}" fork="true">
+      <classpath>
+        <pathelement location="${build}"/>
+        <!-- resource files -->
+        <pathelement location="${resources}"/>
+      </classpath>
+    </java>
+  </target>
+
+  <target name="jar" depends="compile">
+    <jar jarfile="${dist}/${jar-filename}.jar">
+      <manifest>
+        <attribute name="Main-Class" value="${main-class}"/>
+      </manifest>
+      <fileset dir="${build}">
+        <include name="**/*.class"/>
+      </fileset>
+      <!-- resource files if exist -->
+      <fileset dir="${resources}" erroronmissingdir="false"/>
+      <!-- include source files for assignments -->
+      <fileset dir="${src}">
+        <include name="**/*.java"/>
+      </fileset>
+    </jar>
+  </target>
+
+  <target name="run-jar" depends="jar">
+    <java jar="${dist}/${jar-filename}.jar" fork="true"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>
