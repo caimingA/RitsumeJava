@@ -25,7 +25,7 @@ public class Main {
     JFrame frame = new JFrame();
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     /* ここから // ウィンドウのタイトルを各自の学生証番号と名前にすること */
-    frame.setTitle("2600170522-8 CAI Ming <-- 各自の学生証番号と名前に書き換えること");
+    frame.setTitle("2600170522-8 CAI Ming");
     /* ここまで */
     frame.setLocation(10, 10);
     // Canvasのインスタンスを作成し，frameに追加する．
@@ -40,6 +40,11 @@ public class Main {
     toolBar.add(new ToolButton("Line", new LineFactory(), canvas));
     toolBar.add(new ToolButton("Diamond", new DiamondFactory(), canvas));
     toolBar.add(new ToolButton("Oval", new OvalFactory(), canvas));
+    toolBar.add(new ToolButton("Triangle", new TriangleFactory(), canvas));
+    toolBar.add(new ToolButton("Star", new StarFactory(), canvas));
+    toolBar.add(new ToolButton("Scribble", new ScribbleFactory(), canvas));
+
+    toolBar.addSeparator();
 
     JButton colorButton = new JButton("Color");
     colorButton.addActionListener((ae) -> {
@@ -50,6 +55,8 @@ public class Main {
       }
     });
     toolBar.add(colorButton);
+
+    toolBar.addSeparator();
 
     JButton quitButton = new JButton("Quit");
     quitButton.addActionListener((ae) -> {

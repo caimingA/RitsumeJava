@@ -22,3 +22,4 @@ public class Diamond extends Rectangle {
   }
   /* ここまで */
 }
+
