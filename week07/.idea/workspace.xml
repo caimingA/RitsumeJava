@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6442c73-a83b-42a2-a391-9f543dcca85f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Diamond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diamond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week08/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$0538kh.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +20,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week09" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,7 +52,8 @@
       <updated>1572875356585</updated>
       <workItem from="1572875370194" duration="3153000" />
       <workItem from="1573480719837" duration="5462000" />
-      <workItem from="1573487137687" duration="23152000" />
+      <workItem from="1573487137687" duration="23759000" />
+      <workItem from="1574173651760" duration="916000" />
     </task>
     <servers />
   </component>
