@@ -107,6 +107,8 @@ public class Main {
         }
       }
     });
+
+    toolBar.add(readButton);
     /* ここまで */
     JButton quitButton = new JButton("Quit");
     quitButton.addActionListener((ae) -> System.exit(0));
